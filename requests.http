@@ -1,0 +1,29 @@
+GET http://localhost:5277/games
+
+###
+GET http://localhost:5277/games/9
+
+###
+POST http://localhost:5277/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and Family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5277/games/1
+Content-Type: application/json
+
+{
+    "name": "Mortal Kombat",
+    "genre": "Action",
+    "price": 89.99,
+    "releaseDate": "2010-09-13"
+}
+
+###
+DELETE http://localhost:5277/games/2
